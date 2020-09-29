@@ -4,5 +4,31 @@
 }
 
 .mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+  color: green;
+}
+
+.container-items {
+  display: flex;
+  align-items: center;
+}
+
+.mat-menu-item .mat-icon-no-color {
+  color:#fff;
+}
+span .mat-icon-button  {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-social {
+  line-height: 36px;
+}
+
+.mat-icon:hover, .mat-button.mat-primary:hover {
   color: #fff;
+  cursor: pointer;
+}
+
+.mat-icon {
+  font-size: 25px;
 }

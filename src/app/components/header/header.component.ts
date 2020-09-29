@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from '../../models/menuItem'
+
+//Icons FontAwesome
+import {  faInstagram, faInstagramSquare, faBehance} from '@fortawesome/free-brands-svg-icons';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,8 +16,10 @@ export class HeaderComponent implements OnInit {
 
   checked = true;
 
-  constructor() { }
+  constructor() {}
 
+  faInstagram = faInstagram;
+  faBehance = faBehance
   ngOnInit(): void {
     this.menuItems = [
       {

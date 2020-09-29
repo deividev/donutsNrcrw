@@ -14,6 +14,8 @@ import { ContactComponent } from './components/contact/contact.component';
 
 //Material Module
 import { MaterialModule } from './material/material.module';
+//Icon FontAwesome
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,10 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    FontAwesomeModule
+  ],
+  exports: [
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

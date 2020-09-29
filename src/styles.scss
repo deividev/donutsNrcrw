@@ -73,12 +73,8 @@ $donutsNrc-theme: mat-light-theme((
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #fff,}
 
-p, h1, h2, h3, h4, a, button , .mat-button{
+p, h1, h2, h3, h4, a, button , .mat-button, .mat-menu-item, .mat-icon{
   color: green;
-}
-
-section {
-  margin: auto;
 }
 
 .mat-button:active {
