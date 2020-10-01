@@ -41,13 +41,6 @@ export class HeaderComponent implements OnInit {
   }
 
   goTo(route) {
-    debugger
     document.getElementById(route).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
-  toAbout() {
-    document.getElementById('about').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
-  toContact() {
-    document.getElementById('contact').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 }

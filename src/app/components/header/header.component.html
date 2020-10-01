@@ -4,20 +4,20 @@
   <a (click)="toContact()" routerLinkActive="active">Contact</a>
 </li> -->
 
-<mat-toolbar color="dark" class="mat-elevation-z4" fxLayout="row">
-  <div fxFlex>
-    <a mat-button routerLink="/home">
+<mat-toolbar color="dark" class="mat-elevation-z4">
+  <div >
+    <a color="primary" mat-button routerLink="/home">
       <h2>Donuts Nrc</h2>
     </a>
   </div>
   <div class="container-items">
-    <a  class="container-items" mat-button color="primary" (click)="goTo(item.route)"   *ngFor="let item of menuItems" fxHide.xs color="primary">
+    <a  class="container-items" mat-button color="primary" (click)="goTo(item.route)"   *ngFor="let item of menuItems" fxHide.xs >
       {{item.label}}
     </a>
-    <a class="icon-social" target="_blank" mat-icon-button>
+    <a class="icon-social" target="_blank" color="primary" mat-icon-button>
       <mat-icon class="mr"><fa-icon [icon]="faInstagram"></fa-icon></mat-icon>
     </a>
-    <a class="icon-social" target="_blank" mat-icon-button>
+    <a class="icon-social" target="_blank" color="primary" mat-icon-button>
       <mat-icon class="mr"><fa-icon [icon]="faBehance"></fa-icon></mat-icon>
     </a>
   </div>
@@ -32,12 +32,6 @@
           </a>
           <mat-divider></mat-divider>
       </ng-container>
-      <a mat-button>
-        <mat-icon class="mr">Behance</mat-icon>
-      </a>
-      <mat-divider></mat-divider>
-      <a mat-button>
-        <mat-icon class="mr">Instagram</mat-icon>
-      </a>
+
   </mat-menu>
 </mat-toolbar>

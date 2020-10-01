@@ -12,41 +12,6 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$donutsNrc-primary: mat-palette($mat-indigo);
-$donutsNrc-accent: mat-palette($mat-pink, A200, A100, A400);
-
-// The warn palette is optional (defaults to red).
-$donutsNrc-warn: mat-palette($mat-red);
-
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$donutsNrc-theme: mat-light-theme((
-  color: (
-    primary: $donutsNrc-primary,
-    accent: $donutsNrc-accent,
-    warn: $donutsNrc-warn,
-  )
-));
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include angular-material-theme($donutsNrc-theme);
-
-
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
-// Plus imports for other components in your app.
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
-@include mat-core();
-
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
 $donutsNrc-primary: mat-palette($mat-green, A400);
 $donutsNrc-accent: mat-palette($mat-pink, A200, A100, A400);
 
@@ -63,20 +28,115 @@ $donutsNrc-theme: mat-light-theme((
   )
 ));
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+// @include angular-material-theme($donutsNrc-theme);
+
+
+// // Custom Theming for Angular Material
+// // For more information: https://material.angular.io/guide/theming
+// @import '~@angular/material/theming';
+// // Plus imports for other components in your app.
+
+// // Include the common styles for Angular Material. We include this here so that you only
+// // have to load a single css file for Angular Material in your app.
+// // Be sure that you only ever include this mixin once!
+// @include mat-core();
+
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+// $donutsNrc-primary: mat-palette($mat-green, A400);
+// $donutsNrc-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// // The warn palette is optional (defaults to red).
+// $donutsNrc-warn: mat-palette($mat-red);
+
+// // Create the theme object. A theme consists of configurations for individual
+// // theming systems such as "color" or "typography".
+// $donutsNrc-theme: mat-light-theme((
+//   color: (
+//     primary: $donutsNrc-primary,
+//     accent: $donutsNrc-accent,
+//     warn: $donutsNrc-warn,
+//   )
+// ));
+
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
 @include angular-material-theme($donutsNrc-theme);
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #fff,}
 
-p, h1, h2, h3, h4, a, button , .mat-button, .mat-menu-item, .mat-icon{
-  color: green;
+//Variables global
+
+.primary {
+  color: #00e676;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Montserrat Alternates, sans-serif; color: #fff,}
+
+p{
+  color: #000;
 }
 
 .mat-button:active {
   color: #fff;
+}
+
+
+
+//LIneas Cabezeras de las sections
+
+
+.line {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+h2.background {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+      border-top: 1px solid #00e676;
+      content:"";
+      margin: 0 auto; /* this centers the line to the full width specified */
+      position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+      top: 50%; left: 0; right: 0; bottom: 0;
+      width: 100%;
+      z-index: -1;
+  }
+
+  span {
+      /* to hide the lines from behind the text, you have to set the background color the same as the container */
+      background: #fff;
+      padding: 0 15px;
+  }
+}
+
+h2 {
+  font: 33px sans-serif;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+//Sections
+
+section {
+  margin: 20px 0;;
+}
+.container-section {
+    // display: flex;
+    // align-items: flex-start;
+    // justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
 }

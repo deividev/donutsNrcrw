@@ -1,11 +1,22 @@
+//Header Version Mobile
+
+// .mat-toolbar {
+//   display: flex;
+//   flex-direction: column;
+//   z-index: 100;
+//   top: 325px;
+//   position: fixed;
+//   background-color: #00000075;
+//   height: 250px;
+// }
+
 .mat-toolbar {
-  position: relative;
+  z-index: 100;
+  top: 0;
+  position: absolute;
   background-color: #000;
 }
 
-.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
-  color: green;
-}
 
 .container-items {
   display: flex;
