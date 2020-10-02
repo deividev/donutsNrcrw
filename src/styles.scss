@@ -2,12 +2,20 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
+
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Montserrat, Alternates',
+  $button: mat-typography-level(20px, 48px, 300),
+  $body-1: mat-typography-level(16px, 24px, 500),
+  $title: mat-typography-level(20px, 32px, 800),
+);
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat-core();
+@include mat-core($custom-typography);
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
@@ -80,6 +88,12 @@ $donutsNrc-theme: mat-light-theme((
 html, body { height: 100%; }
 body { margin: 0; font-family: Montserrat Alternates, sans-serif; color: #fff,}
 
+.mat-body, .mat-body-1, .mat-typography {
+  font: 400 14px/20px Montserrat Alternates, sans-serif;
+  letter-spacing: normal;
+  font-weight: 800;
+}
+
 p{
   color: #000;
 }
@@ -121,7 +135,8 @@ h2.background {
 }
 
 h2 {
-  font: 33px sans-serif;
+  font: 33px ;
+  font-weight: 800;
   margin-top: 25px;
   text-align: center;
   text-transform: uppercase;
