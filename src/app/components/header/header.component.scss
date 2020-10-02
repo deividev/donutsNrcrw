@@ -21,6 +21,10 @@
 .logo {
   width: auto;
   height: 60px;
+
+  &__title {
+    padding: 0 2px;
+  }
 }
 
 .container-items {
