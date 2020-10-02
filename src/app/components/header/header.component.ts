@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem } from '../../models/menuItem'
 
 //Icons FontAwesome
-import {  faInstagram, faInstagramSquare, faBehance} from '@fortawesome/free-brands-svg-icons';
+import {  faInstagram, faInstagramSquare, faBehanceSquare} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   faInstagram = faInstagram;
-  faBehance = faBehance
+  faBehance = faBehanceSquare
   ngOnInit(): void {
     this.menuItems = [
       {

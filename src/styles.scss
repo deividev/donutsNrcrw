@@ -148,10 +148,29 @@ h2 {
 section {
   margin: 20px 0;
 }
-.container-section {
-    // display: flex;
-    // align-items: flex-start;
-    // justify-content: space-around;
+
+//Version
+@media (max-width: 767px) {
+
+  .container-section {
     width: 80%;
     margin: 0 auto;
+
+    &--about {
+      flex-direction: column;
+    }
+  }
+}
+.container-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+//Icons
+.icon-social {
+  line-height: 30px;
 }
