@@ -1,1 +1,28 @@
 
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  background-color: #e7e7e7;
+}
+
+.mat-menu-item .mat-icon-no-color {
+  color:#fff;
+}
+.mat-icon-button  {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-social {
+  line-height: 32px;
+}
+
+.mat-icon:hover, .mat-button.mat-primary:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.mat-icon {
+  font-size: 50px;
+}
