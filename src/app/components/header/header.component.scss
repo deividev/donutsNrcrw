@@ -1,17 +1,19 @@
 //Header Version Mobile
 
 // .mat-toolbar {
-//   display: flex;
-//   flex-direction: column;
-//   z-index: 100;
-//   top: 325px;
-//   position: fixed;
-//   background-color: #00000075;
-//   height: 250px;
+//
 // }
 
 .mat-toolbar {
-  padding: 5px;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    top: 0;
+    position: fixed;
+    background-color: #00000075;
+  }
+  padding: 10px;
   z-index: 100;
   top: 0;
   position: absolute;
@@ -19,6 +21,10 @@
 }
 
 .logo {
+  @media (max-width: 767px) {
+    width: auto;
+    height: 40px;
+  }
   width: auto;
   height: 60px;
 

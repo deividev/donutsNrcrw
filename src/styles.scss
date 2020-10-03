@@ -153,12 +153,11 @@ section {
 @media (max-width: 767px) {
 
   .container-section {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-
-    &--about {
-      flex-direction: column;
-    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 .container-section {

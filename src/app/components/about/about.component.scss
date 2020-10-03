@@ -3,11 +3,9 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-right: 20px;
+  margin-bottom: 10px;
+
+  @media (min-width: 767px) {
+    margin-right: 20px;
+  }
 }
-
-
-// .container-section {
-//   display: flex;
-//   align-items: center;
-// }

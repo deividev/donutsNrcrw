@@ -2,7 +2,7 @@
 .contact {
   display: flex;
   justify-content: center;
-  width: 70%;
+  padding: 15px;
   background-color: #e7e7e7;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .mat-icon:hover, .mat-button.mat-primary:hover {
-  color: #fff;
+  color: #000;
   cursor: pointer;
 }
 
