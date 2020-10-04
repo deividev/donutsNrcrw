@@ -1,11 +1,19 @@
-.video {
+.img {
   max-height: 600px;
   width: 100%;
-  position: relative;
-  overflow: hidden;
   margin-bottom: 10px;
+  border-radius: 5px;
 
   @media (min-width: 767px) {
     margin-right: 20px;
   }
+
+  @media (min-width: 1024px) {
+    max-height: 700px;
+    width: 75%;
+  }
+}
+
+.img-text {
+  padding: 8px;
 }
