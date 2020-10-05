@@ -15,8 +15,14 @@ export class ProjectsComponent implements OnInit {
   cardProject: CardProjectComponent
   ngOnInit(): void {
   }
-  openDialog() {
+  openDialog($event) {
     const dialogConfig = new MatDialogConfig();
+    console.log($event);
+
+    dialogConfig.data  =  {
+      id : $event.title ,
+      title : 'Angular para principiantes'
+  } ;
 
         dialogConfig.disableClose = true;
         dialogConfig.autoFocus = false;
