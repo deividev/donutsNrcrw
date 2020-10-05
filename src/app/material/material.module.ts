@@ -10,6 +10,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   imports:  [
@@ -21,7 +23,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatDividerModule,
     MatMenuModule,
     MatSlideToggleModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule
   ],
   exports: [
     MatButtonModule,
@@ -32,7 +35,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatDividerModule,
     MatMenuModule,
     MatSlideToggleModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule
   ]
 })
 

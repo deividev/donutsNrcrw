@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
+import { CardProjectComponent } from '../card-project/card-project.component'
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
+
+  cardProject: CardProjectComponent
   ngOnInit(): void {
   }
+  openDialog() {
+    const dialogConfig = new MatDialogConfig();
 
+        dialogConfig.disableClose = true;
+        dialogConfig.autoFocus = true;
+
+        this.dialog.open(CardProjectComponent, dialogConfig);
+  }
 }

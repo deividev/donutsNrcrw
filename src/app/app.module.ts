@@ -16,6 +16,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MaterialModule } from './material/material.module';
 //Icon FontAwesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CardProjectComponent } from './components/card-project/card-project.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -25,19 +27,24 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CoverComponent,
     ProjectsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    CardProjectComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    CardProjectComponent
   ],
   exports: [
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
