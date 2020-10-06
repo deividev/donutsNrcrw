@@ -6,7 +6,7 @@
 
 $custom-typography: mat-typography-config(
   $font-family: 'Montserrat',
-  $button: mat-typography-level(20px, 48px, 500),
+  $button: mat-typography-level(20px, 48px, 800),
   $body-1: mat-typography-level(16px, 24px, 800),
   $title: mat-typography-level(20px, 32px, 900),
 );
@@ -149,7 +149,7 @@ section {
 }
 
 //Version
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
 
   .container-section {
     width: 70%;
