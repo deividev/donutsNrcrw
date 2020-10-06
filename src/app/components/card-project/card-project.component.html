@@ -1,6 +1,11 @@
 
-<h2 mat-dialog-title>Project</h2>
+
+  <button mat-raised-button color="primary" mat-dialog-close>&times;</button>
+  <!-- <button mat-button [mat-dialog-close]="false" cdkFocusInitial>Install</button> -->
+
+
 <mat-dialog-content class="mat-typography">
+  <h2 mat-dialog-title>Project</h2>
   <img class="img" src="assets/imgs/donuts.jpg" alt="">
   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Necessitatibus, voluptate id ab delectus quae ducimus. Maxime debitis, tenetur impedit accusantium dolores inventore dolorem ex veniam
@@ -82,7 +87,4 @@
     </div>
   </div>
 </mat-dialog-content>
-<mat-dialog-actions >
-  <button mat-raised-button color="warn" mat-dialog-close>Exit</button>
-  <!-- <button mat-button [mat-dialog-close]="false" cdkFocusInitial>Install</button> -->
-</mat-dialog-actions>
+

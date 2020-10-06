@@ -17,7 +17,6 @@ export class ProjectsComponent implements OnInit {
   }
   openDialog($event) {
     const dialogConfig = new MatDialogConfig();
-    console.log($event);
 
     dialogConfig.data  =  {
       id : $event.title ,
@@ -25,7 +24,7 @@ export class ProjectsComponent implements OnInit {
   } ;
 
         dialogConfig.disableClose = true;
-        dialogConfig.autoFocus = false;
+        dialogConfig.autoFocus = true;
 
         this.dialog.open(CardProjectComponent, dialogConfig);
   }
