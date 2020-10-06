@@ -5,8 +5,8 @@
 
 
 $custom-typography: mat-typography-config(
-  $font-family: 'Montserrat, Alternates',
-  $button: mat-typography-level(20px, 48px, 300),
+  $font-family: 'Montserrat',
+  $button: mat-typography-level(20px, 48px, 500),
   $body-1: mat-typography-level(16px, 24px, 800),
   $title: mat-typography-level(20px, 32px, 900),
 );
@@ -86,12 +86,12 @@ $donutsNrc-theme: mat-light-theme((
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Montserrat Alternates, sans-serif; color: #fff,}
+body { margin: 0; font-family: Montserrat Alternates; color: #fff,}
 
-.mat-body, .mat-body-1, .mat-typography {
-  font: 800 14px/20px Montserrat Alternates, sans-serif;
-  letter-spacing: normal;
-}
+// .mat-body, .mat-body-1, .mat-typography {
+//   font: 800 14px/20px Montserrat Alternates, sans-serif;
+//   letter-spacing: normal;
+// }
 
 p{
   color: #000;
