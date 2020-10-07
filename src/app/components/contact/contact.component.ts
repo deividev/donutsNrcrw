@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {  faInstagram, faInstagramSquare, faBehanceSquare,} from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faBehanceSquare,} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope as faEnvelope,} from '@fortawesome/free-regular-svg-icons';
-import { faPhoneAlt as faPhoneAlt,} from '@fortawesome/free-solid-svg-icons';
+import { faPhone as faPhone,} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -9,9 +9,9 @@ import { faPhoneAlt as faPhoneAlt,} from '@fortawesome/free-solid-svg-icons';
 })
 export class ContactComponent implements OnInit {
 
-  faMobile = faPhoneAlt;
+  faMobile = faPhone;
   faEmail = faEnvelope;
-  faInstagram = faInstagramSquare;
+  faInstagram = faInstagram;
   faBehance = faBehanceSquare
 
   constructor() { }

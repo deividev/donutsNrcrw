@@ -15,8 +15,19 @@
   color: #fff;
 }
 
+
 .icon-social {
   line-height: 32px;
+}
+
+.mobile {
+  width: 55px;
+  height: 55px;
+  color: #fff;
+
+  .mat-icon {
+    font-size: 37px;
+  }
 }
 
 .mat-icon:hover, .mat-button.mat-primary:hover {
