@@ -9,7 +9,7 @@ import { environment } from './../../../environments/environment'
 })
 export class CoverComponent implements OnInit {
   video
-  constructor(public router: HttpClient) { }
+  constructor(public router: HttpClient) { }º
 
   ngOnInit(): void {
     this.video = document.getElementById('video');
