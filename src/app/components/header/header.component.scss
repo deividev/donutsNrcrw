@@ -1,8 +1,3 @@
-//Header Version Mobile
-
-// .mat-toolbar {
-//
-// }
 
 .mat-toolbar {
   @media (max-width: 767px) {
@@ -10,13 +5,13 @@
     flex-direction: column;
     z-index: 100;
     top: 0;
-    position: fixed;
+    // position: fixed;
     background-color: #000000;
   }
   padding: 10px;
   z-index: 100;
   top: 0;
-  position: absolute;
+  // position: absolute;
   background-color: #000;
 }
 
