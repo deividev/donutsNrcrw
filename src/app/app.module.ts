@@ -18,6 +18,7 @@ import { MaterialModule } from './material/material.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardProjectComponent } from './components/card-project/card-project.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppRoutingModule,
     MaterialModule,
     FontAwesomeModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule,
   ],
   entryComponents: [
     CardProjectComponent
