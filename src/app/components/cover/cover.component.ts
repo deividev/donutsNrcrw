@@ -12,8 +12,8 @@ export class CoverComponent implements OnInit {
   constructor(public router: HttpClient) { }º
 
   ngOnInit(): void {
-    this.video = document.getElementById('video');
-    this.video.play();
+    // this.video = document.getElementById('video');
+    // this.video.play();
 
     // this.router.get(`${environment.apiUrl}videos`).subscribe((item: any) => {
     //   this.video = `http://localhost:1337${item[0].file.url}`;
